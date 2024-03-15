@@ -1,0 +1,52 @@
+{
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "test_tauri_app",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.liamtestapp.dev",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "test_tauri_app",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "updater": {
+      "active": true,
+      "dialog": true,
+      "endpoints": ["https://github.com/liamlife/test-app-update/install.json"],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDNCNjQxOERGNzVCMUU0NwpSV1JISGx2M2pVRzJBd05aWlZSZFpwMmk5ektUMFlYQ2o3cVozVnM5RStDZkR0dlJSZEdDQjhhQwo="
+    }
+  }
+}
