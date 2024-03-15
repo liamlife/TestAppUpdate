@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "test_tauri_app",
+    "productName": "test-app-update",
     "version": "0.0.1"
   },
   "tauri": {
@@ -37,16 +37,19 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "test_tauri_app",
+        "title": "test-app-update",
         "width": 800,
         "height": 600
       }
     ],
     "updater": {
+      "windows": {
+        "installMode": "passive"
+      },
       "active": true,
       "dialog": true,
       "endpoints": ["https://github.com/liamlife/test-app-update/install.json"],
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDNCNjQxOERGNzVCMUU0NwpSV1JISGx2M2pVRzJBd05aWlZSZFpwMmk5ektUMFlYQ2o3cVozVnM5RStDZkR0dlJSZEdDQjhhQwo="
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEEzRUNEMDNCRjFBQ0FGREIKUldUYnI2enhPOURzbzJUTmJiRlhGYXlXZDNWMVNGSTltK0wzcmc1RENBWUdFazZRWU1XRDRUSnMK"
     }
   }
 }
