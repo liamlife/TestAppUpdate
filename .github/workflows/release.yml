@@ -101,7 +101,7 @@ jobs:
             ./target/${{ matrix.target }}/release/bundle/msi/**
 
   release-testappupdate:
-    needs: build-
+    needs: build-testappupdate
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
